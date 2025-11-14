@@ -1,0 +1,15 @@
+openpyxl
+sqlalchemy
+pyodbc
+opentelemetry-proto
+minio
+requests
+pytz
+
+airflow-dbt
+
+
+astronomer-cosmos>= 1.10.0
+
+dbt-core
+dbt-postgres

@@ -1,0 +1,36 @@
+# Example dbt project configuration
+# Thay đổi tên project và các cấu hình theo nhu cầu
+
+name: 'example_project'
+version: '1.0.0'
+
+# Profile name phải khớp với tên trong profiles.yml
+profile: 'example_project'
+
+# Đường dẫn các loại files
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+# Thư mục sẽ bị xóa khi chạy dbt clean
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Cấu hình models
+# Có thể override trong từng model file
+models:
+  example_project:
+    # Models trong thư mục staging
+    staging:
+      +schema: staging
+      +materialized: view
+    
+    # Models trong thư mục marts
+    marts:
+      +schema: marts
+      +materialized: table
+

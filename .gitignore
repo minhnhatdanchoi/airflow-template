@@ -1,0 +1,47 @@
+# Airflow
+logs/
+*.log
+airflow.db
+airflow.cfg
+
+# DBT
+dbt/.dbt/
+dbt/projects/*/target/
+dbt/projects/*/dbt_packages/
+dbt/projects/*/logs/
+dbt/logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
