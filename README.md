@@ -37,7 +37,8 @@ cp .env.example .env
 ### 3. Cấu hình các biến môi trường trong `.env`
 
 - `AIRFLOW_UID`: User ID (thường là 50000)
-- `AIRFLOW__CORE__FERNET_KEY`: Fernet key để mã hóa connections
+- Trên Linux/Ubuntu, chạy `id -u` để lấy giá trị chính xác rồi cập nhật vào `.env`
+- `AIRFLOW__CORE__FERNET_KEY`: Fernet key để mã hóa connections, chạy code py dưới
 - `AIRFLOW__WEBSERVER__SECRET_KEY`: Secret key cho webserver
 
 Để tạo Fernet key:

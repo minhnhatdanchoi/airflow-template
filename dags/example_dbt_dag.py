@@ -24,7 +24,7 @@ DWH_CONNECTION = Variable.get('DWH_CONNECTION', default_var='postgres_default')
 
 # Đường dẫn đến dbt project
 # Thay 'my_project' bằng tên dbt project của bạn
-project_path = '/opt/airflow/dbt/projects/my_project'
+project_path = '/opt/airflow/dbt/projects/example_project'
 
 default_args = {
     'owner': 'airflow',
